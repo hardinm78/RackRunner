@@ -55,7 +55,7 @@ class GameScene: SKScene {
         loadView()
     }
     func loadView(){
-        
+        self.removeAllChildren()
         intersected = false
         gameStarted = false
         
