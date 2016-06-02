@@ -26,6 +26,18 @@
 		8E3E5F131D00C329002FF05C /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F061D00C329002FF05C /* Error.wav */; };
 		8E3E5F151D00C329002FF05C /* fill2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F081D00C329002FF05C /* fill2.wav */; };
 		8E3E5F1C1D00C867002FF05C /* yousuck.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F1B1D00C867002FF05C /* yousuck.wav */; };
+		8E3E5F291D00CD4A002FF05C /* lose12.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F1D1D00CD4A002FF05C /* lose12.wav */; };
+		8E3E5F2A1D00CD4A002FF05C /* lose11.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F1E1D00CD4A002FF05C /* lose11.wav */; };
+		8E3E5F2B1D00CD4A002FF05C /* lose10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F1F1D00CD4A002FF05C /* lose10.wav */; };
+		8E3E5F2C1D00CD4A002FF05C /* lose9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F201D00CD4A002FF05C /* lose9.wav */; };
+		8E3E5F2D1D00CD4A002FF05C /* lose8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F211D00CD4A002FF05C /* lose8.wav */; };
+		8E3E5F2E1D00CD4A002FF05C /* lose7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F221D00CD4A002FF05C /* lose7.wav */; };
+		8E3E5F2F1D00CD4A002FF05C /* lose6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F231D00CD4A002FF05C /* lose6.wav */; };
+		8E3E5F301D00CD4A002FF05C /* lose5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F241D00CD4A002FF05C /* lose5.wav */; };
+		8E3E5F311D00CD4A002FF05C /* lose4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F251D00CD4A002FF05C /* lose4.wav */; };
+		8E3E5F321D00CD4A002FF05C /* lose3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F261D00CD4A002FF05C /* lose3.wav */; };
+		8E3E5F331D00CD4A002FF05C /* lose2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F271D00CD4A002FF05C /* lose2.wav */; };
+		8E3E5F341D00CD4A002FF05C /* lose1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F281D00CD4A002FF05C /* lose1.wav */; };
 		E5CC36D2F4088F1938D47779 /* Pods_RackRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +65,18 @@
 		8E3E5F061D00C329002FF05C /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
 		8E3E5F081D00C329002FF05C /* fill2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fill2.wav; sourceTree = "<group>"; };
 		8E3E5F1B1D00C867002FF05C /* yousuck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yousuck.wav; sourceTree = "<group>"; };
+		8E3E5F1D1D00CD4A002FF05C /* lose12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose12.wav; sourceTree = "<group>"; };
+		8E3E5F1E1D00CD4A002FF05C /* lose11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose11.wav; sourceTree = "<group>"; };
+		8E3E5F1F1D00CD4A002FF05C /* lose10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose10.wav; sourceTree = "<group>"; };
+		8E3E5F201D00CD4A002FF05C /* lose9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose9.wav; sourceTree = "<group>"; };
+		8E3E5F211D00CD4A002FF05C /* lose8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose8.wav; sourceTree = "<group>"; };
+		8E3E5F221D00CD4A002FF05C /* lose7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose7.wav; sourceTree = "<group>"; };
+		8E3E5F231D00CD4A002FF05C /* lose6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose6.wav; sourceTree = "<group>"; };
+		8E3E5F241D00CD4A002FF05C /* lose5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose5.wav; sourceTree = "<group>"; };
+		8E3E5F251D00CD4A002FF05C /* lose4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose4.wav; sourceTree = "<group>"; };
+		8E3E5F261D00CD4A002FF05C /* lose3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose3.wav; sourceTree = "<group>"; };
+		8E3E5F271D00CD4A002FF05C /* lose2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose2.wav; sourceTree = "<group>"; };
+		8E3E5F281D00CD4A002FF05C /* lose1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose1.wav; sourceTree = "<group>"; };
 		9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RackRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +143,18 @@
 		8E3E5F001D00C329002FF05C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E5F1D1D00CD4A002FF05C /* lose12.wav */,
+				8E3E5F1E1D00CD4A002FF05C /* lose11.wav */,
+				8E3E5F1F1D00CD4A002FF05C /* lose10.wav */,
+				8E3E5F201D00CD4A002FF05C /* lose9.wav */,
+				8E3E5F211D00CD4A002FF05C /* lose8.wav */,
+				8E3E5F221D00CD4A002FF05C /* lose7.wav */,
+				8E3E5F231D00CD4A002FF05C /* lose6.wav */,
+				8E3E5F241D00CD4A002FF05C /* lose5.wav */,
+				8E3E5F251D00CD4A002FF05C /* lose4.wav */,
+				8E3E5F261D00CD4A002FF05C /* lose3.wav */,
+				8E3E5F271D00CD4A002FF05C /* lose2.wav */,
+				8E3E5F281D00CD4A002FF05C /* lose1.wav */,
 				8E3E5F011D00C329002FF05C /* backgd.mp3 */,
 				8E3E5F021D00C329002FF05C /* ballhittingandpocket.wav */,
 				8E3E5F1B1D00C867002FF05C /* yousuck.wav */,
@@ -203,16 +239,28 @@
 			files = (
 				8E3E5EFD1D008293002FF05C /* GoogleService-Info.plist in Resources */,
 				8E3E5F121D00C329002FF05C /* Drip.wav in Resources */,
+				8E3E5F2A1D00CD4A002FF05C /* lose11.wav in Resources */,
 				8E3E5F101D00C329002FF05C /* ballshitting.wav in Resources */,
+				8E3E5F2D1D00CD4A002FF05C /* lose8.wav in Resources */,
+				8E3E5F2C1D00CD4A002FF05C /* lose9.wav in Resources */,
+				8E3E5F311D00CD4A002FF05C /* lose4.wav in Resources */,
+				8E3E5F2E1D00CD4A002FF05C /* lose7.wav in Resources */,
+				8E3E5F301D00CD4A002FF05C /* lose5.wav in Resources */,
 				8E3E5F1C1D00C867002FF05C /* yousuck.wav in Resources */,
+				8E3E5F331D00CD4A002FF05C /* lose2.wav in Resources */,
 				8E3E5EE51CFF71C0002FF05C /* GameScene.sks in Resources */,
 				8E3E5F131D00C329002FF05C /* Error.wav in Resources */,
 				8E3E5EF11CFF71C0002FF05C /* LaunchScreen.storyboard in Resources */,
+				8E3E5F341D00CD4A002FF05C /* lose1.wav in Resources */,
+				8E3E5F321D00CD4A002FF05C /* lose3.wav in Resources */,
 				8E3E5EEE1CFF71C0002FF05C /* Assets.xcassets in Resources */,
 				8E3E5F0F1D00C329002FF05C /* ballhittingandpocket.wav in Resources */,
+				8E3E5F2B1D00CD4A002FF05C /* lose10.wav in Resources */,
+				8E3E5F2F1D00CD4A002FF05C /* lose6.wav in Resources */,
 				8E3E5F0E1D00C329002FF05C /* backgd.mp3 in Resources */,
 				8E3E5F151D00C329002FF05C /* fill2.wav in Resources */,
 				8E3E5F111D00C329002FF05C /* Chomp.wav in Resources */,
+				8E3E5F291D00CD4A002FF05C /* lose12.wav in Resources */,
 				8E3E5EEC1CFF71C0002FF05C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

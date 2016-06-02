@@ -22,7 +22,18 @@ class GameScene: SKScene {
     var intersected = false
     
     var ballHit = SKAction.playSoundFileNamed("ballshitting.wav", waitForCompletion: false)
-    var youSuck = SKAction.playSoundFileNamed("yousuck.wav", waitForCompletion: false)
+    var lose1 = SKAction.playSoundFileNamed("lose1.wav", waitForCompletion: false)
+    var lose2 = SKAction.playSoundFileNamed("lose2.wav", waitForCompletion: false)
+    var lose3 = SKAction.playSoundFileNamed("lose3.wav", waitForCompletion: false)
+    var lose4 = SKAction.playSoundFileNamed("lose4.wav", waitForCompletion: false)
+    var lose5 = SKAction.playSoundFileNamed("lose5.wav", waitForCompletion: false)
+    var lose6 = SKAction.playSoundFileNamed("lose6.wav", waitForCompletion: false)
+    var lose7 = SKAction.playSoundFileNamed("lose7.wav", waitForCompletion: false)
+    var lose8 = SKAction.playSoundFileNamed("lose8.wav", waitForCompletion: false)
+    var lose9 = SKAction.playSoundFileNamed("lose9.wav", waitForCompletion: false)
+    var lose10 = SKAction.playSoundFileNamed("lose10.wav", waitForCompletion: false)
+    var lose11 = SKAction.playSoundFileNamed("lose11.wav", waitForCompletion: false)
+    var lose12 = SKAction.playSoundFileNamed("lose12.wav", waitForCompletion: false)
     
     var topLevelLabel = UILabel()
     var levelLabel = UILabel()
@@ -188,7 +199,7 @@ class GameScene: SKScene {
         path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 120, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
         let tempSpeed = CGFloat.random(min: 200, max: 600)
-        print(tempSpeed)
+        //print(tempSpeed)
         let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: tempSpeed)
         
         person.runAction(SKAction.repeatActionForever(follow).reversedAction())
@@ -204,7 +215,7 @@ class GameScene: SKScene {
         
         //let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: 200)
         let tempSpeed = CGFloat.random(min: 200, max: 600)
-        print(tempSpeed)
+        //print(tempSpeed)
         let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: tempSpeed)
         person.runAction(SKAction.repeatActionForever(follow))
         
@@ -248,7 +259,39 @@ class GameScene: SKScene {
     
     
     func died(){
-        playSound(youSuck)
+        let rand = arc4random_uniform(12) + 1
+        print(rand)
+        switch rand {
+        case 1:
+            playSound(lose1)
+        case 2:
+            playSound(lose2)
+        case 3:
+            playSound(lose3)
+        case 4:
+            playSound(lose4)
+        case 5:
+            playSound(lose5)
+        case 6:
+            playSound(lose6)
+        case 7:
+            playSound(lose7)
+        case 8:
+            playSound(lose8)
+        case 9:
+            playSound(lose9)
+        case 10:
+            playSound(lose10)
+        case 11:
+            playSound(lose11)
+        case 12:
+            playSound(lose12)
+        default:
+            playSound(lose1)
+        }
+        
+        
+        
         self.removeAllChildren()
         
         
