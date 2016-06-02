@@ -15,9 +15,15 @@
 		8E3E5EEE1CFF71C0002FF05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5EED1CFF71C0002FF05C /* Assets.xcassets */; };
 		8E3E5EF11CFF71C0002FF05C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5EEF1CFF71C0002FF05C /* LaunchScreen.storyboard */; };
 		8E3E5EF91CFF7217002FF05C /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E5EF81CFF7217002FF05C /* CGFloatExtension.swift */; };
+		8E3E5EFB1D0079DA002FF05C /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E5EFA1D0079DA002FF05C /* TitleVC.swift */; };
+		8E3E5EFD1D008293002FF05C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5EFC1D008293002FF05C /* GoogleService-Info.plist */; };
+		8E3E5EFF1D00841A002FF05C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E5EFE1D00841A002FF05C /* GoogleMobileAds.framework */; };
+		E5CC36D2F4088F1938D47779 /* Pods_RackRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C486C89B7ACC35992EB838C /* Pods-RackRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RackRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner.debug.xcconfig"; sourceTree = "<group>"; };
+		7557306D1B2576A78E174A7B /* Pods-RackRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RackRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner.release.xcconfig"; sourceTree = "<group>"; };
 		8E3E5EDF1CFF71C0002FF05C /* RackRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RackRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E5EE21CFF71C0002FF05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E5EE41CFF71C0002FF05C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +34,10 @@
 		8E3E5EF01CFF71C0002FF05C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3E5EF21CFF71C0002FF05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E3E5EF81CFF7217002FF05C /* CGFloatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		8E3E5EFA1D0079DA002FF05C /* TitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
+		8E3E5EFC1D008293002FF05C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E3E5EFE1D00841A002FF05C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RackRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3E5EFF1D00841A002FF05C /* GoogleMobileAds.framework in Frameworks */,
+				E5CC36D2F4088F1938D47779 /* Pods_RackRunner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21E3E77D77D48AFB7EE446F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C486C89B7ACC35992EB838C /* Pods-RackRunner.debug.xcconfig */,
+				7557306D1B2576A78E174A7B /* Pods-RackRunner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E3E5ED61CFF71C0002FF05C = {
 			isa = PBXGroup;
 			children = (
+				8E3E5EFE1D00841A002FF05C /* GoogleMobileAds.framework */,
 				8E3E5EE11CFF71C0002FF05C /* RackRunner */,
 				8E3E5EE01CFF71C0002FF05C /* Products */,
+				21E3E77D77D48AFB7EE446F3 /* Pods */,
+				BD0D8FC99E0345973E59B677 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +84,7 @@
 		8E3E5EE11CFF71C0002FF05C /* RackRunner */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E5EFC1D008293002FF05C /* GoogleService-Info.plist */,
 				8E3E5EE21CFF71C0002FF05C /* AppDelegate.swift */,
 				8E3E5EE41CFF71C0002FF05C /* GameScene.sks */,
 				8E3E5EE61CFF71C0002FF05C /* GameScene.swift */,
@@ -69,8 +94,17 @@
 				8E3E5EED1CFF71C0002FF05C /* Assets.xcassets */,
 				8E3E5EEF1CFF71C0002FF05C /* LaunchScreen.storyboard */,
 				8E3E5EF21CFF71C0002FF05C /* Info.plist */,
+				8E3E5EFA1D0079DA002FF05C /* TitleVC.swift */,
 			);
 			path = RackRunner;
+			sourceTree = "<group>";
+		};
+		BD0D8FC99E0345973E59B677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E3E5EF51CFF71C0002FF05C /* Build configuration list for PBXNativeTarget "RackRunner" */;
 			buildPhases = (
+				642B2FDD99838AAA29E6C792 /* 📦 Check Pods Manifest.lock */,
 				8E3E5EDB1CFF71C0002FF05C /* Sources */,
 				8E3E5EDC1CFF71C0002FF05C /* Frameworks */,
 				8E3E5EDD1CFF71C0002FF05C /* Resources */,
+				448A90B604765E3AA0E2FBA9 /* 📦 Embed Pods Frameworks */,
+				42EA4CC39155F70BC1E7EED6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3E5EFD1D008293002FF05C /* GoogleService-Info.plist in Resources */,
 				8E3E5EE51CFF71C0002FF05C /* GameScene.sks in Resources */,
 				8E3E5EF11CFF71C0002FF05C /* LaunchScreen.storyboard in Resources */,
 				8E3E5EEE1CFF71C0002FF05C /* Assets.xcassets in Resources */,
@@ -140,6 +178,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42EA4CC39155F70BC1E7EED6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		448A90B604765E3AA0E2FBA9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		642B2FDD99838AAA29E6C792 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E3E5EDB1CFF71C0002FF05C /* Sources */ = {
@@ -150,6 +236,7 @@
 				8E3E5EE91CFF71C0002FF05C /* GameViewController.swift in Sources */,
 				8E3E5EF91CFF7217002FF05C /* CGFloatExtension.swift in Sources */,
 				8E3E5EE31CFF71C0002FF05C /* AppDelegate.swift in Sources */,
+				8E3E5EFB1D0079DA002FF05C /* TitleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +349,14 @@
 		};
 		8E3E5EF61CFF71C0002FF05C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C486C89B7ACC35992EB838C /* Pods-RackRunner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RackRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHardin.Rack-Runner";
@@ -275,9 +367,14 @@
 		};
 		8E3E5EF71CFF71C0002FF05C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7557306D1B2576A78E174A7B /* Pods-RackRunner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RackRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHardin.Rack-Runner";

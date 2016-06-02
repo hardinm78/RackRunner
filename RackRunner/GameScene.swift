@@ -46,7 +46,7 @@ class GameScene: SKScene {
             levelLabel.text = "\(currentScore)"
         }
         
-        topLevelLabel = UILabel(frame: CGRect(x: 10, y: 0, width: 150, height: 100))
+        topLevelLabel = UILabel(frame: CGRect(x: 10, y: 30, width: 150, height: 100))
         topLevelLabel.text = "Level:\(currentLevel)"
         topLevelLabel.textColor = UIColor.whiteColor()
         topLevelLabel.font = UIFont(name: "Optima", size: 20)
@@ -75,8 +75,8 @@ class GameScene: SKScene {
         circle.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         self.addChild(circle)
         
-        person = SKSpriteNode(imageNamed: "Person")
-        person.size = CGSize(width: 40, height: 7)
+        person = SKSpriteNode(imageNamed: "cueBall")
+        person.size = CGSize(width: 40, height: 40)
         person.position = CGPoint(x: self.frame.width/2 , y: self.frame.height/2 + 120)
         person.zRotation = 3.14 / 2
         person.zPosition = 2.0
@@ -135,6 +135,18 @@ class GameScene: SKScene {
             dot = SKSpriteNode(imageNamed: "eightBall")
         case 9 :
             dot = SKSpriteNode(imageNamed: "nineBall")
+        case 10 :
+            dot = SKSpriteNode(imageNamed: "tenBall")
+        case 11 :
+            dot = SKSpriteNode(imageNamed: "elevenBall")
+        case 12 :
+            dot = SKSpriteNode(imageNamed: "twelveBall")
+        case 13 :
+            dot = SKSpriteNode(imageNamed: "thirteenBall")
+        case 14 :
+            dot = SKSpriteNode(imageNamed: "fourteenBall")
+        case 15 :
+            dot = SKSpriteNode(imageNamed: "fifteenBall")
             ballNumber = 0
         default:
             dot = SKSpriteNode(imageNamed: "sixBall")
@@ -143,7 +155,7 @@ class GameScene: SKScene {
         }
         
         //dot = SKSpriteNode(imageNamed: "oneBall")
-        dot.size = CGSize(width: 40, height: 40)
+        dot.size = CGSize(width: 40, height: 43)
         dot.zPosition = 1.0
         let dx = person.position.x - self.frame.width/2
         let dy = person.position.y - self.frame.height/2
