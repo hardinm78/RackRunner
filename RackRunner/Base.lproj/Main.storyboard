@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest Level Reached: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujn-Dp-elq">
-                                <rect key="frame" x="155" y="450" width="291" height="34"/>
+                                <rect key="frame" x="155" y="364" width="291" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="1PH-IY-5GR"/>
                                     <constraint firstAttribute="height" constant="34" id="Cia-pG-xgY"/>
@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slq-Mr-vr8">
-                                <rect key="frame" x="266" y="486" width="69" height="37"/>
+                                <rect key="frame" x="266" y="400" width="69" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="Bzs-3J-uWy"/>
                                     <constraint firstAttribute="width" constant="69" id="cAn-aW-WKJ"/>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhX-ZT-5kh">
-                                <rect key="frame" x="200" y="346" width="200" height="80"/>
+                                <rect key="frame" x="200" y="260" width="200" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6sB-jk-O6O"/>
                                     <constraint firstAttribute="width" constant="200" id="Ks9-CC-qsn"/>
@@ -78,6 +78,7 @@
                             <constraint firstItem="ujn-Dp-elq" firstAttribute="centerX" secondItem="DzZ-3f-W4E" secondAttribute="centerX" id="NYp-zg-zTS"/>
                             <constraint firstItem="zSJ-1G-EQ1" firstAttribute="trailing" secondItem="DzZ-3f-W4E" secondAttribute="trailingMargin" id="Tah-lC-O8c"/>
                             <constraint firstItem="ujn-Dp-elq" firstAttribute="top" secondItem="bhX-ZT-5kh" secondAttribute="bottom" constant="24" id="WbX-XS-C4p"/>
+                            <constraint firstItem="bhX-ZT-5kh" firstAttribute="centerY" secondItem="DzZ-3f-W4E" secondAttribute="centerY" id="ZMb-PN-AOy"/>
                             <constraint firstItem="EHV-Xm-CGp" firstAttribute="top" secondItem="3qj-eh-fST" secondAttribute="bottom" constant="20" id="f1w-9V-TYs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c2A-qI-V7E" secondAttribute="trailing" constant="-20" id="iZ7-De-cWq"/>
                             <constraint firstItem="bhX-ZT-5kh" firstAttribute="centerX" secondItem="DzZ-3f-W4E" secondAttribute="centerX" id="n83-RK-Wuk"/>
@@ -85,6 +86,11 @@
                             <constraint firstItem="c2A-qI-V7E" firstAttribute="leading" secondItem="DzZ-3f-W4E" secondAttribute="leadingMargin" constant="-20" id="rOE-ll-1Px"/>
                             <constraint firstItem="EHV-Xm-CGp" firstAttribute="leading" secondItem="DzZ-3f-W4E" secondAttribute="leadingMargin" id="sXF-kB-QES"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pe7-5D-wiT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="highLevelLabel" destination="slq-Mr-vr8" id="4Jm-xB-xw9"/>
