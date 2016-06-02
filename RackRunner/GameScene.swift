@@ -21,6 +21,8 @@ class GameScene: SKScene {
     
     var intersected = false
     
+    var ballHit = SKAction.playSoundFileNamed("ballshitting.wav", waitForCompletion: false)
+    var youSuck = SKAction.playSoundFileNamed("yousuck.wav", waitForCompletion: false)
     
     var topLevelLabel = UILabel()
     var levelLabel = UILabel()
@@ -46,16 +48,18 @@ class GameScene: SKScene {
             levelLabel.text = "\(currentScore)"
         }
         
-        topLevelLabel = UILabel(frame: CGRect(x: 10, y: 30, width: 150, height: 100))
+        topLevelLabel = UILabel(frame: CGRectMake(self.view!.frame.size.width/3, 60, 120, 25))
         topLevelLabel.text = "Level:\(currentLevel)"
         topLevelLabel.textColor = UIColor.whiteColor()
-        topLevelLabel.font = UIFont(name: "Optima", size: 20)
+        topLevelLabel.textAlignment = NSTextAlignment.Left
+        topLevelLabel.font = UIFont(name: "Optima", size: 30)
         self.view?.addSubview(topLevelLabel)
         
         loadView()
     }
     func loadView(){
         self.removeAllChildren()
+        levelLabel.removeFromSuperview()
         intersected = false
         gameStarted = false
         
@@ -199,8 +203,9 @@ class GameScene: SKScene {
         path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 120, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
         //let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: 200)
-        
-        let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: 200)
+        let tempSpeed = CGFloat.random(min: 200, max: 600)
+        print(tempSpeed)
+        let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: tempSpeed)
         person.runAction(SKAction.repeatActionForever(follow))
         
     }
@@ -209,7 +214,7 @@ class GameScene: SKScene {
         if intersected{
             ballNumber += 1
             dot.removeFromParent()
-            
+            playSound(ballHit)
             intersected = false
             addDot()
             currentScore -= 1
@@ -220,10 +225,14 @@ class GameScene: SKScene {
             
             
         }else {
+            
             died()
         }
     }
-    
+    func playSound(sound : SKAction)
+    {
+        runAction(sound)
+    }
     func nextLevel(){
         currentLevel += 1
         currentScore = currentLevel
@@ -239,6 +248,7 @@ class GameScene: SKScene {
     
     
     func died(){
+        playSound(youSuck)
         self.removeAllChildren()
         
         
