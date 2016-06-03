@@ -39,6 +39,8 @@
 		8E3E5F331D00CD4A002FF05C /* lose2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F271D00CD4A002FF05C /* lose2.wav */; };
 		8E3E5F341D00CD4A002FF05C /* lose1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F281D00CD4A002FF05C /* lose1.wav */; };
 		8E3E5F361D01BF06002FF05C /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E5F351D01BF06002FF05C /* InfoVC.swift */; };
+		8E3E5F381D01D38E002FF05C /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F371D01D38E002FF05C /* win.wav */; };
+		8E3E5F3A1D01DA63002FF05C /* BrokenChalk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5F391D01DA63002FF05C /* BrokenChalk.ttf */; };
 		E5CC36D2F4088F1938D47779 /* Pods_RackRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		8E3E5F271D00CD4A002FF05C /* lose2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose2.wav; sourceTree = "<group>"; };
 		8E3E5F281D00CD4A002FF05C /* lose1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose1.wav; sourceTree = "<group>"; };
 		8E3E5F351D01BF06002FF05C /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		8E3E5F371D01D38E002FF05C /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		8E3E5F391D01DA63002FF05C /* BrokenChalk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrokenChalk.ttf; sourceTree = "<group>"; };
 		9AC5F7D1DC35F341FB503C84 /* Pods_RackRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RackRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,7 @@
 				8E3E5EF21CFF71C0002FF05C /* Info.plist */,
 				8E3E5EFA1D0079DA002FF05C /* TitleVC.swift */,
 				8E3E5F351D01BF06002FF05C /* InfoVC.swift */,
+				8E3E5F391D01DA63002FF05C /* BrokenChalk.ttf */,
 				8E3E5F001D00C329002FF05C /* Sounds */,
 			);
 			path = RackRunner;
@@ -146,6 +151,7 @@
 		8E3E5F001D00C329002FF05C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E5F371D01D38E002FF05C /* win.wav */,
 				8E3E5F1D1D00CD4A002FF05C /* lose12.wav */,
 				8E3E5F1E1D00CD4A002FF05C /* lose11.wav */,
 				8E3E5F1F1D00CD4A002FF05C /* lose10.wav */,
@@ -245,6 +251,7 @@
 				8E3E5F2A1D00CD4A002FF05C /* lose11.wav in Resources */,
 				8E3E5F101D00C329002FF05C /* ballshitting.wav in Resources */,
 				8E3E5F2D1D00CD4A002FF05C /* lose8.wav in Resources */,
+				8E3E5F381D01D38E002FF05C /* win.wav in Resources */,
 				8E3E5F2C1D00CD4A002FF05C /* lose9.wav in Resources */,
 				8E3E5F311D00CD4A002FF05C /* lose4.wav in Resources */,
 				8E3E5F2E1D00CD4A002FF05C /* lose7.wav in Resources */,
@@ -261,6 +268,7 @@
 				8E3E5F2B1D00CD4A002FF05C /* lose10.wav in Resources */,
 				8E3E5F2F1D00CD4A002FF05C /* lose6.wav in Resources */,
 				8E3E5F0E1D00C329002FF05C /* backgd.mp3 in Resources */,
+				8E3E5F3A1D01DA63002FF05C /* BrokenChalk.ttf in Resources */,
 				8E3E5F151D00C329002FF05C /* fill2.wav in Resources */,
 				8E3E5F111D00C329002FF05C /* Chomp.wav in Resources */,
 				8E3E5F291D00CD4A002FF05C /* lose12.wav in Resources */,

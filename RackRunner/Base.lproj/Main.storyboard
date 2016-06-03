@@ -175,7 +175,7 @@
                                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Nagging Girlfriend&quot; courtesy of Epanody and FreeSound.org." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-Sq-Aa5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Nagging Girlfriend&quot; by Epanody and &quot;Jingle Win Synth&quot; by LittleRobotSoundFactory both courtesy of FreeSound.org." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-Sq-Aa5">
                                         <rect key="frame" x="8" y="185" width="544" height="51"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,6 +240,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8i-EW-6Ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="1000"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vvR-JO-Btg">
+            <objects>
+                <viewController id="VYY-I6-zqB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zLG-PG-Kf1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xRT-nL-U2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g4X-3W-eej">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-BL-p8W">
+                                <rect key="frame" x="252" y="205" width="138" height="120"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn8-s6-Z3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="1033"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">

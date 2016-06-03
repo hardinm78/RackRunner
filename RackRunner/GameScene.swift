@@ -22,6 +22,7 @@ class GameScene: SKScene {
     var intersected = false
     
     var ballHit = SKAction.playSoundFileNamed("ballshitting.wav", waitForCompletion: false)
+    var win = SKAction.playSoundFileNamed("win.wav", waitForCompletion: false)
     var lose1 = SKAction.playSoundFileNamed("lose1.wav", waitForCompletion: false)
     var lose2 = SKAction.playSoundFileNamed("lose2.wav", waitForCompletion: false)
     var lose3 = SKAction.playSoundFileNamed("lose3.wav", waitForCompletion: false)
@@ -44,7 +45,8 @@ class GameScene: SKScene {
     var ballNumber = Int()
     
     override func didMoveToView(view: SKView) {
-        
+        playSound(win)
+        playSound(ballHit)
         
         let defaults = NSUserDefaults.standardUserDefaults()
         if defaults.integerForKey("highLevel") != 0 {
@@ -85,7 +87,7 @@ class GameScene: SKScene {
         ballNumber = 1
         movingClockwise = true
         //backgroundColor = SKColor.whiteColor()
-        circle = SKSpriteNode(imageNamed: "greenfeltCircle")
+        circle = SKSpriteNode(imageNamed: "feltwchlk")
         circle.size = CGSize(width: 300, height: 300)
         circle.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         self.addChild(circle)
@@ -105,7 +107,7 @@ class GameScene: SKScene {
         levelLabel.text = "\(currentScore)"
         levelLabel.textColor = SKColor.whiteColor()
         levelLabel.textAlignment = NSTextAlignment.Center
-        levelLabel.font = UIFont(name: "Optima", size: 60)
+        levelLabel.font = UIFont(name: "BrokenChalk", size: 60)
         self.view?.addSubview(levelLabel)
     }
     
@@ -295,8 +297,8 @@ class GameScene: SKScene {
         self.removeAllChildren()
         
         
-        let action1 = SKAction.colorizeWithColor(UIColor.redColor(), colorBlendFactor: 1.0, duration: 0.2)
-        let action2 = SKAction.colorizeWithColor(UIColor.whiteColor(), colorBlendFactor: 1.0, duration: 0.2)
+        let action1 = SKAction.colorizeWithColor(UIColor.orangeColor(), colorBlendFactor: 1.0, duration: 0.2)
+        let action2 = SKAction.colorizeWithColor(UIColor.blackColor(), colorBlendFactor: 1.0, duration: 0.2)
         self.scene?.runAction(SKAction.sequence([action1,action2]))
         
         intersected = false
@@ -316,6 +318,7 @@ class GameScene: SKScene {
     }
     
     func won(){
+        playSound(win)
         self.removeAllChildren()
         let action1 = SKAction.colorizeWithColor(UIColor.greenColor(), colorBlendFactor: 1.0, duration: 0.2)
         let action2 = SKAction.colorizeWithColor(UIColor.whiteColor(), colorBlendFactor: 1.0, duration: 0.2)
