@@ -14,6 +14,7 @@ class GameScene: SKScene {
     var dot = SKSpriteNode()
     var bgImage = SKSpriteNode()
     
+    var levelWord = SKSpriteNode()
     
     var path = UIBezierPath()
     
@@ -65,23 +66,31 @@ class GameScene: SKScene {
         
         
         
-        topLevelLabel = UILabel(frame: CGRectMake(self.view!.frame.size.width/3, 60, 120, 25))
-        topLevelLabel.text = "Level:\(currentLevel)"
-        topLevelLabel.textColor = UIColor.whiteColor()
-        topLevelLabel.textAlignment = NSTextAlignment.Left
-        topLevelLabel.font = UIFont(name: "Optima", size: 30)
-        self.view?.addSubview(topLevelLabel)
+        
+//        topLevelLabel = UILabel(frame: CGRectMake(self.view!.frame.size.width/3, 60, 120, 25))
+//        topLevelLabel.text = "Level:\(currentLevel)"
+//        topLevelLabel.textColor = UIColor.whiteColor()
+//        topLevelLabel.textAlignment = NSTextAlignment.Left
+//        topLevelLabel.font = UIFont(name: "Optima", size: 30)
+//        self.view?.addSubview(topLevelLabel)
         
         loadView()
     }
     func loadView(){
         self.removeAllChildren()
+        levelWord = SKSpriteNode(imageNamed: "Leveltext")
+        levelWord.size = CGSize(width: 143, height: 48)
+        levelWord.position = CGPoint(x: self.frame.width/2 , y: self.frame.height/2 + 60)
+        
+        levelWord.zPosition = 3.0
+        self.addChild(levelWord)
         levelLabel.removeFromSuperview()
         intersected = false
         gameStarted = false
         
-        bgImage = SKSpriteNode(imageNamed: "wood")
+        bgImage = SKSpriteNode(imageNamed: "bg")
         bgImage.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+       
         bgImage.size = CGSize(width: self.frame.width, height: self.frame.height)
         print(self.frame.width)
         print(self.frame.height)
@@ -94,15 +103,15 @@ class GameScene: SKScene {
         ballNumber = 1
         movingClockwise = true
         //backgroundColor = SKColor.whiteColor()
-        circle = SKSpriteNode(imageNamed: "feltwchlk")
+        circle = SKSpriteNode(imageNamed: "Circle")
         circle.size = CGSize(width: 300, height: 300)
         
         circle.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         self.addChild(circle)
         
         person = SKSpriteNode(imageNamed: "cueBall")
-        person.size = CGSize(width: 40, height: 40)
-        person.position = CGPoint(x: self.frame.width/2 , y: self.frame.height/2 + 120)
+        person.size = CGSize(width: 50, height: 50)
+        person.position = CGPoint(x: self.frame.width/2 , y: self.frame.height/2 + 112)
         person.zRotation = 3.14 / 2
         person.zPosition = 2.0
         self.addChild(person)
@@ -113,14 +122,16 @@ class GameScene: SKScene {
         levelLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
         levelLabel.center = (self.view?.center)!
         levelLabel.text = "\(currentScore)"
-        levelLabel.textColor = SKColor.whiteColor()
+        levelLabel.textColor = SKColor.cyanColor()
         levelLabel.textAlignment = NSTextAlignment.Center
-        levelLabel.font = UIFont(name: "BrokenChalk", size: 60)
+        levelLabel.font = UIFont(name: "JD Digital", size: 150)
+        
         self.view?.addSubview(levelLabel)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if !gameStarted {
+            levelWord.removeFromParent()
             moveClockwise()
             movingClockwise = true
             gameStarted = true
@@ -180,7 +191,7 @@ class GameScene: SKScene {
         }
         
         //dot = SKSpriteNode(imageNamed: "oneBall")
-        dot.size = CGSize(width: 40, height: 43)
+        dot.size = CGSize(width: 50, height: 50)
         dot.zPosition = 1.0
         let dx = person.position.x - self.frame.width/2
         let dy = person.position.y - self.frame.height/2
@@ -189,11 +200,11 @@ class GameScene: SKScene {
         
         if movingClockwise {
             let tempAngle = CGFloat.random(min: rad - 1.0, max: rad - 2.5)
-            let path2 = UIBezierPath(arcCenter: CGPoint(x:self.frame.width/2,y:self.frame.height/2), radius: 125, startAngle: tempAngle, endAngle: tempAngle + CGFloat(M_PI*4), clockwise: true)
+            let path2 = UIBezierPath(arcCenter: CGPoint(x:self.frame.width/2,y:self.frame.height/2), radius: 112, startAngle: tempAngle, endAngle: tempAngle + CGFloat(M_PI*4), clockwise: true)
             dot.position = path2.currentPoint
         }else {
             let tempAngle = CGFloat.random(min: rad + 1.0, max: rad + 2.5)
-            let path2 = UIBezierPath(arcCenter: CGPoint(x:self.frame.width/2,y:self.frame.height/2), radius: 125, startAngle: tempAngle, endAngle: tempAngle + CGFloat(M_PI*4), clockwise: true)
+            let path2 = UIBezierPath(arcCenter: CGPoint(x:self.frame.width/2,y:self.frame.height/2), radius: 112, startAngle: tempAngle, endAngle: tempAngle + CGFloat(M_PI*4), clockwise: true)
             dot.position = path2.currentPoint
         }
         self.addChild(dot)
@@ -206,7 +217,7 @@ class GameScene: SKScene {
         
         let rad = atan2(dy,dx)
         
-        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 120, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
+        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 112, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
         let tempSpeed = CGFloat.random(min: 200, max: 600)
         //print(tempSpeed)
@@ -221,7 +232,7 @@ class GameScene: SKScene {
         
         let rad = atan2(dy,dx)
         
-        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 120, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
+        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 112, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
         //let follow = SKAction.followPath(path.CGPath, asOffset: false, orientToPath: true, speed: 200)
         let tempSpeed = CGFloat.random(min: 200, max: 600)

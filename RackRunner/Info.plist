@@ -53,6 +53,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>BrokenChalk.ttf</string>
+		<string>jd_digital.ttf</string>
 	</array>
 </dict>
 </plist>

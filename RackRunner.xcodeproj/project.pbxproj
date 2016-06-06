@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E3062E31D0601620040C914 /* jd_digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E3062E21D0601620040C914 /* jd_digital.ttf */; };
 		8E3E5EE31CFF71C0002FF05C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E5EE21CFF71C0002FF05C /* AppDelegate.swift */; };
 		8E3E5EE51CFF71C0002FF05C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E5EE41CFF71C0002FF05C /* GameScene.sks */; };
 		8E3E5EE71CFF71C0002FF05C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E5EE61CFF71C0002FF05C /* GameScene.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		1C486C89B7ACC35992EB838C /* Pods-RackRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RackRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		7557306D1B2576A78E174A7B /* Pods-RackRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RackRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RackRunner/Pods-RackRunner.release.xcconfig"; sourceTree = "<group>"; };
+		8E3062E21D0601620040C914 /* jd_digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jd_digital.ttf; sourceTree = "<group>"; };
 		8E3E5EDF1CFF71C0002FF05C /* RackRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RackRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E5EE21CFF71C0002FF05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E5EE41CFF71C0002FF05C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8E3E5EF21CFF71C0002FF05C /* Info.plist */,
 				8E3E5EFA1D0079DA002FF05C /* TitleVC.swift */,
 				8E3E5F351D01BF06002FF05C /* InfoVC.swift */,
+				8E3062E21D0601620040C914 /* jd_digital.ttf */,
 				8E3E5F391D01DA63002FF05C /* BrokenChalk.ttf */,
 				8E3E5F001D00C329002FF05C /* Sounds */,
 			);
@@ -255,6 +258,7 @@
 				8E3E5F2C1D00CD4A002FF05C /* lose9.wav in Resources */,
 				8E3E5F311D00CD4A002FF05C /* lose4.wav in Resources */,
 				8E3E5F2E1D00CD4A002FF05C /* lose7.wav in Resources */,
+				8E3062E31D0601620040C914 /* jd_digital.ttf in Resources */,
 				8E3E5F301D00CD4A002FF05C /* lose5.wav in Resources */,
 				8E3E5F1C1D00C867002FF05C /* yousuck.wav in Resources */,
 				8E3E5F331D00CD4A002FF05C /* lose2.wav in Resources */,
