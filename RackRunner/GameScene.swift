@@ -14,6 +14,7 @@ class GameScene: SKScene {
     var dot = SKSpriteNode()
     var bgImage = SKSpriteNode()
     
+    
     var path = UIBezierPath()
     
     var gameStarted = Bool()
@@ -61,6 +62,9 @@ class GameScene: SKScene {
             levelLabel.text = "\(currentScore)"
         }
         
+        
+        
+        
         topLevelLabel = UILabel(frame: CGRectMake(self.view!.frame.size.width/3, 60, 120, 25))
         topLevelLabel.text = "Level:\(currentLevel)"
         topLevelLabel.textColor = UIColor.whiteColor()
@@ -79,16 +83,20 @@ class GameScene: SKScene {
         bgImage = SKSpriteNode(imageNamed: "wood")
         bgImage.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         bgImage.size = CGSize(width: self.frame.width, height: self.frame.height)
+        print(self.frame.width)
+        print(self.frame.height)
         bgImage.zPosition = -1
         self.addChild(bgImage)
         
         
+
         
         ballNumber = 1
         movingClockwise = true
         //backgroundColor = SKColor.whiteColor()
         circle = SKSpriteNode(imageNamed: "feltwchlk")
         circle.size = CGSize(width: 300, height: 300)
+        
         circle.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         self.addChild(circle)
         
@@ -227,7 +235,9 @@ class GameScene: SKScene {
         if intersected{
             ballNumber += 1
             dot.removeFromParent()
+           
             playSound(ballHit)
+           
             intersected = false
             addDot()
             currentScore -= 1
@@ -244,7 +254,9 @@ class GameScene: SKScene {
     }
     func playSound(sound : SKAction)
     {
+        if soundOn{
         runAction(sound)
+        }
     }
     func nextLevel(){
         currentLevel += 1

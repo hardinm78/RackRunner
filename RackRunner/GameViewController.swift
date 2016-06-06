@@ -10,6 +10,9 @@ import UIKit
 import SpriteKit
 import GoogleMobileAds
 
+var soundOn = true
+
+
 class GameViewController: UIViewController {
 
     @IBOutlet weak var bannerView: GADBannerView!
@@ -59,4 +62,17 @@ class GameViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    @IBOutlet weak var soundBtn: UIButton!
+
+    @IBAction func soundBtnTapped(sender: UIButton) {
+        if soundOn{
+        soundBtn.setImage(UIImage(named:"off"), forState: .Normal)
+            soundOn = false
+        }else {
+          soundBtn.setImage(UIImage(named:"on"), forState: .Normal)
+            soundOn = true
+        }
+    }
+
 }
