@@ -50,6 +50,7 @@ class GameScene: SKScene {
         playSound(win)
         playSound(ballHit)
         
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         if defaults.integerForKey("highLevel") != 0 {
             highestLevel = defaults.integerForKey("highLevel") as Int!

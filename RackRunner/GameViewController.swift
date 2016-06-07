@@ -24,8 +24,9 @@ class GameViewController: UIViewController {
         bannerView.adUnitID = "ca-app-pub-6381417154543225/3077757597"
         bannerView.rootViewController = self
         bannerView.loadRequest(GADRequest())
-        
-        
+        if !soundOn{
+        soundBtn.setImage(UIImage(named:"off"), forState: .Normal)
+        }
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             let skView = self.view as! SKView
@@ -77,4 +78,7 @@ class GameViewController: UIViewController {
         }
     }
 
+    @IBAction func backTapped(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
