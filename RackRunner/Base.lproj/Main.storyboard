@@ -150,7 +150,7 @@
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkW-WR-US8">
-                                        <rect key="frame" x="247" y="153" width="67" height="27"/>
+                                        <rect key="frame" x="247" y="119" width="67" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="SSg-uP-AMO"/>
                                             <constraint firstAttribute="width" constant="67" id="TKl-NU-Ete"/>
@@ -170,29 +170,31 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-2d-BcG">
-                                        <rect key="frame" x="8" y="40" width="544" height="76"/>
+                                        <rect key="frame" x="12" y="40" width="536" height="42"/>
                                         <string key="text">1. Touch the screen anywhere to start the cue ball moving. 2. Touch the screen anywhere again when the cue ball is touching the object ball.</string>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Nagging Girlfriend&quot; by Epanody and &quot;Jingle Win Synth&quot; by LittleRobotSoundFactory both courtesy of FreeSound.org." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-Sq-Aa5">
-                                        <rect key="frame" x="8" y="185" width="544" height="51"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tky-Sq-Aa5">
+                                        <rect key="frame" x="8" y="151" width="544" height="55"/>
+                                        <string key="text">"Nagging Girlfriend" by Epanody and "Jingle Win Synth" by LittleRobotSoundFactory both courtesy of FreeSound.org. Super Ultra Special Thanks to Samy Atia aka General Pixel for his fantastic contributions art and otherwise.</string>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2o-uN-JJk">
-                                        <rect key="frame" x="205" y="269" width="150" height="60"/>
+                                        <rect key="frame" x="20" y="9" width="25" height="25"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="89a-xN-qGW"/>
-                                            <constraint firstAttribute="height" constant="60" id="zFr-pc-dJc"/>
+                                            <constraint firstAttribute="width" constant="25" id="SKC-GJ-WFh"/>
+                                            <constraint firstAttribute="height" constant="25" id="b1Y-a7-jXJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="backButton"/>
+                                        <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backTapped:" destination="uhR-Vv-Jcm" eventType="touchUpInside" id="rfu-vV-rOw"/>
                                         </connections>
@@ -200,17 +202,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.21019230769230771" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="b2o-uN-JJk" firstAttribute="leading" secondItem="W4A-YZ-v67" secondAttribute="leading" constant="20" id="BoA-tK-tqp"/>
                                     <constraint firstItem="Tky-Sq-Aa5" firstAttribute="top" secondItem="PkW-WR-US8" secondAttribute="bottom" constant="5" id="FHU-ym-Ml5"/>
                                     <constraint firstItem="RGO-JU-RGK" firstAttribute="top" secondItem="W4A-YZ-v67" secondAttribute="top" constant="8" id="J9q-Jq-BpN"/>
-                                    <constraint firstItem="b2o-uN-JJk" firstAttribute="top" secondItem="Tky-Sq-Aa5" secondAttribute="bottom" constant="33" id="Ll0-Gb-EiC"/>
-                                    <constraint firstItem="Juz-2d-BcG" firstAttribute="leading" secondItem="W4A-YZ-v67" secondAttribute="leading" constant="8" id="Ne5-eA-2J4"/>
+                                    <constraint firstItem="Juz-2d-BcG" firstAttribute="leading" secondItem="W4A-YZ-v67" secondAttribute="leading" constant="12" id="Ne5-eA-2J4"/>
                                     <constraint firstItem="Juz-2d-BcG" firstAttribute="leading" secondItem="PkW-WR-US8" secondAttribute="trailing" constant="-299" id="QW6-mS-mF3"/>
                                     <constraint firstItem="PkW-WR-US8" firstAttribute="centerX" secondItem="W4A-YZ-v67" secondAttribute="centerX" id="e51-kW-zkd"/>
                                     <constraint firstItem="Juz-2d-BcG" firstAttribute="top" secondItem="RGO-JU-RGK" secondAttribute="bottom" constant="8" id="gKr-h3-Y4A"/>
                                     <constraint firstItem="PkW-WR-US8" firstAttribute="top" secondItem="Juz-2d-BcG" secondAttribute="bottom" constant="37" id="iyd-k3-N40"/>
                                     <constraint firstItem="RGO-JU-RGK" firstAttribute="centerX" secondItem="W4A-YZ-v67" secondAttribute="centerX" id="j9G-a0-gEV"/>
-                                    <constraint firstAttribute="trailing" secondItem="Juz-2d-BcG" secondAttribute="trailing" constant="8" id="lOu-Nj-3QR"/>
-                                    <constraint firstItem="b2o-uN-JJk" firstAttribute="centerX" secondItem="W4A-YZ-v67" secondAttribute="centerX" id="q1y-U2-5pY"/>
+                                    <constraint firstItem="b2o-uN-JJk" firstAttribute="centerY" secondItem="RGO-JU-RGK" secondAttribute="centerY" id="jp4-am-u4b"/>
+                                    <constraint firstAttribute="trailing" secondItem="Juz-2d-BcG" secondAttribute="trailing" constant="12" id="lOu-Nj-3QR"/>
                                     <constraint firstItem="Tky-Sq-Aa5" firstAttribute="leading" secondItem="W4A-YZ-v67" secondAttribute="leading" constant="8" id="tSa-5v-jvQ"/>
                                     <constraint firstItem="PkW-WR-US8" firstAttribute="centerX" secondItem="W4A-YZ-v67" secondAttribute="centerX" id="tkb-x0-r2H"/>
                                     <constraint firstAttribute="bottom" secondItem="Juz-2d-BcG" secondAttribute="bottom" constant="8" id="wa8-at-0lJ"/>
@@ -320,7 +322,6 @@
         <image name="Play3" width="238" height="104"/>
         <image name="Rack_Runner_Logo_tilted" width="694" height="413"/>
         <image name="back" width="128" height="128"/>
-        <image name="backButton" width="392" height="118"/>
         <image name="bg" width="750" height="1334"/>
         <image name="on" width="128" height="128"/>
     </resources>
